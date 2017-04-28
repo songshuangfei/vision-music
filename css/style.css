@@ -1,0 +1,59 @@
+body {
+  background-color: gray;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  margin: -250px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.cell {
+  width: 4px;
+  height: 160px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-top: -160px;
+  margin-left: -2px;
+  transform-origin:50% 100%;
+}
+
+.circle-out {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  top: 0px;
+  background-color: red;
+  transform-origin:50% 0%;
+  transform: rotate(180deg);
+  transition-duration: 0.1s;
+  opacity: 0.8;
+
+}
+
+.circle-in {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  top: 6px;
+  background-color: #fff;
+  transition-duration: 0.1s;
+  opacity: 0.8;
+}
+
+.information {
+  width: 300px;
+  height: 160px;
+  margin-left: -150px;
+  margin-top: -80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
